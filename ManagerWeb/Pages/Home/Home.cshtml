@@ -1,0 +1,45 @@
+﻿@page
+@model ManagerWeb.Pages.Home.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Home</h1>
+
+<html>
+<head>
+    <title>%s</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/manager.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="Header">
+        <h1>%s</h1>
+    </div>
+
+    <div id="Sidebar">
+        %s
+    </div>
+
+    <div id="Body">
+        <form id="selectViewForm">
+            %s
+        </form>
+
+        users order</br>
+        <textarea class="list" id="userOrders" readonly></textarea>
+        </br>
+
+        total</br>
+        <textarea class="list" id="result" readonly></textarea>
+    </div>
+
+    <script src="/src/js/manager/api.js"></script>
+    <script src="/src/js/ajax.js"></script>
+    <script src="/src/js/post.js"></script>
+    <script src="/src/js/websocket.js"></script>
+    <script id="homeJS" src="/src/js/manager/home/main.js"></script>
+    <script id="%s" src="%s"></script>
+</body>
+</html>

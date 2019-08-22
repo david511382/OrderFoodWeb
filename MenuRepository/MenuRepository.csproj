@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190801151437_MenuInitialCreate.cs" />
+    <Compile Remove="Migrations\20190801151437_MenuInitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190801151541_MenuInitialCreate.cs" />
+    <Compile Remove="Migrations\20190801151541_MenuInitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190801151716_MenuInitialCreate.cs" />
+    <Compile Remove="Migrations\20190801151716_MenuInitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190801151930_MenuInitialCreate.cs" />
+    <Compile Remove="Migrations\20190801151930_MenuInitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190801152325_MenuInitialCreate.cs" />
+    <Compile Remove="Migrations\20190801152325_MenuInitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190805124825_MenuAddSelection.cs" />
+    <Compile Remove="Migrations\20190805124825_MenuAddSelection.Designer.cs" />
+    <Compile Remove="Migrations\20190805124946_MenuAddSelection.cs" />
+    <Compile Remove="Migrations\20190805124946_MenuAddSelection.Designer.cs" />
+    <Compile Remove="Migrations\20190805125213_MenuAddSelection.cs" />
+    <Compile Remove="Migrations\20190805125213_MenuAddSelection.Designer.cs" />
+    <Compile Remove="Migrations\20190805125933_MenuNameLengthSet.cs" />
+    <Compile Remove="Migrations\20190805125933_MenuNameLengthSet.Designer.cs" />
+    <Compile Remove="Migrations\20190805130001_MenuNameLengthSet.cs" />
+    <Compile Remove="Migrations\20190805130001_MenuNameLengthSet.Designer.cs" />
+    <Compile Remove="Migrations\20190805131643_MenuReset.cs" />
+    <Compile Remove="Migrations\20190805131643_MenuReset.Designer.cs" />
+    <Compile Remove="Migrations\20190805132131_MenuNameLengthSet.cs" />
+    <Compile Remove="Migrations\20190805132131_MenuNameLengthSet.Designer.cs" />
+    <Compile Remove="Migrations\20190805132214_MenuTest.cs" />
+    <Compile Remove="Migrations\20190805132214_MenuTest.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+  </ItemGroup>
+
+</Project>

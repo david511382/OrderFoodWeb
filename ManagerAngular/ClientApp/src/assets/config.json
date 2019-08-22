@@ -1,0 +1,4 @@
+{
+  "menuUrl": "api/Menu/GetShops",
+  "textfile": "assets/textfile.txt"
+}

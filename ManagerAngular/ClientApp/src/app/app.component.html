@@ -1,0 +1,46 @@
+<body>
+  <h1>
+    {{title}}
+  </h1>
+  <app-nav-menu></app-nav-menu>
+  <shared-treenode [Nodes]="Nodes"></shared-treenode>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>列車進入月台車站之站名</th>
+        <th>行駛目的地</th>
+        <th>資料更新日期</th>
+        <th>資料更新日期</th>
+        <th>資料更新日期</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{item.a}}</td>
+        <td>{{item.b}}</td>
+        <td>{{item.c}}</td>
+        <td>{{now | date: 'yyyy-MM-dd HH:mm:ss'}}</td>
+        <td><input [ngModel]="now"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+  </div>
+  <p [appHighlight]="color" *appUnless="condition" class="unless a" (click)="click($event)">
+    (A) This paragraph is displayed because the condition is false.
+  </p>
+
+  <p [appHighlight]="color" *appUnless="!condition" class="unless b" (click)="click($event)">
+    (B) Although the condition is true,
+    this paragraph is displayed because appUnless is set to false.
+  </p>
+</body>
